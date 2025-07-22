@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="slider">
+        <div id="slides">
+
+            <!-- Menu de navegação -->
+            <input type="radio" class="slide-nav" name="slide-nav" id="radio-1">
+            <input type="radio" class="slide-nav" name="slide-nav" id="radio-2">
+            <input type="radio" class="slide-nav" name="slide-nav" id="radio-3">
+            <input type="radio" class="slide-nav" name="slide-nav" id="radio-4">
+            <!-- Menu de navegação -->
+
+            <!-- Slides -->
+            <div id="slide-1" class="slide first">
+                <img src="./img/img-1.png" alt="">
+            </div>
+
+            <div id="slide-2" class="slide">
+                <img src="./img/img-2.jpg" alt="">
+            </div>
+
+            <div id="slide-3" class="slide">
+                <img src="./img/img-3.jpg" alt="">
+            </div>
+
+            <div id="slide-4" class="slide">
+                <img src="./img/img-4.jpg" alt="">
+            </div>
+            <!-- Slides -->
+
+            <!-- Navegação automática -->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- Navegação automática -->
+        </div>
+
+
+    </div>
+
+    <div class="manual-nav">
+        <label for="radio-1" class="manual-btn"></label>
+        <label for="radio-2" class="manual-btn"></label>
+        <label for="radio-3" class="manual-btn"></label>
+        <label for="radio-4" class="manual-btn"></label>
+    </div>
+
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
