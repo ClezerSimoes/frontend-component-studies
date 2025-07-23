@@ -1,4 +1,4 @@
-body{
+.box{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -108,4 +108,10 @@ body{
 
 #radio-4:checked ~.nav-auto .auto-btn4{
     background-color: white;
+}
+
+.source{
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
 }
