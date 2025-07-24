@@ -27,7 +27,7 @@ Each component is placed in its own folder with isolated files. Below are exampl
 > components will be added as the study progresses.
 
 ## 📂 Project Structure
-
+````
 components/
 ├── slider/
 │ ├── index.html
@@ -36,7 +36,7 @@ components/
 ├── modal/
 │ └── ...
 └── ...
-
+````
 ## 🚀 How to Run
 
 You can open each component directly in your browser by opening the respective `index.html` file, or use a local development server (like the Live Server extension in VS Code).
