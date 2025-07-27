@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1280px;
+    margin: 10px auto;
+}
+
+.buttons{
+    margin: 50px;
+    justify-self: center;
+}
+
+.buttons button{
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#toast-box{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast-notification{
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.toast-notification i{
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.toast-notification.sucess i{
+    color: lime;
+}
+
+.toast-notification.error i{
+    color: red;
+}
+
+.toast-notification.invalid i{
+    color: yellow;
+}
+
+.toast-notification.sucess::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: lime;
+    animation: anim 5s linear forwards;
+}
+
+.toast-notification.error::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: red;
+    animation: anim 5s linear forwards;
+}
+
+.toast-notification.invalid::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: yellow;
+    animation: anim 5s linear forwards;
+}
+
+@keyframes anim{
+    100%{
+        width: 0;
+    }
+}
+
+.source{
+    margin: 100px;
+    text-align: center;
+}
